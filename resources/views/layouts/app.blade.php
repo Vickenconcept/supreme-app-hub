@@ -8,14 +8,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     @seo([
-        'title' => 'FluenceGrid',
-        'description' => 'Influencers Management Hub',
+        'title' => 'My Automation Toolkit',
+        'description' => 'My Automation Toolkit',
         'image' => asset('images/login-image.png'),
         'site_name' => config('app.name'),
         'favicon' => asset('images/fav-image.png'),
     ])
 
-    <title>Influence</title>
+    <title>My Automation Toolkit</title>
 
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -44,53 +44,6 @@
     <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
 
 
-    <style>
-        .note-group-select-from-files {
-            display: none;
-        }
-
-        .note-image-url,
-        .note-video-url {
-            width: 100%;
-            padding: 8px;
-            margin: 10px 0;
-            border: 1px solid #029745;
-            border-radius: 4px;
-            box-sizing: border-box;
-            background-color: #f8f9fa;
-            color: #373d43;
-        }
-
-        .note-image-url:focus,
-        .note-video-url:focus {
-            border: 1px solid red;
-        }
-
-        .btn-primary {
-            background-color: #029745;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn-primary:hover {
-            background-color: #015e2b;
-            border-radius: 5px !important;
-        }
-
-        .btn-primary:disabled {
-            background-color: #c0c0c0;
-            cursor: not-allowed;
-        }
-
-        .note-modal-footer {
-            height: 60px !important;
-        }
-    </style>
 
     @yield('styles')
 
@@ -120,9 +73,22 @@
         <x-navbar />
         <x-sidebar />
 
-        <div class="h-full sm:ml-64 bg-slate-200 pt-20 overflow-y-hidden">
-            {{-- <div class="h-full sm:ml-64 bg-[#F0F3F7] pt-20 overflow-y-hidden"> --}}
+        {{-- <div class="h-full sm:ml-64 bg-slate-200 pt-20 overflow-y-hidden">
             {{ $slot }}
+        </div> --}}
+
+        <div class="h-full sm:ml-64 pt-20 bg-gray-100 ">
+            <div class="h-full md:rounded-3xl bg-gray-100 pr-1 overflow-hidden">
+                <div class="absolute inset-0  bg-no-repeat bg-cover bg-center opacity-25" style="background-image: url('https://plus.unsplash.com/premium_photo-1680985551058-2759df426d0d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YXBwfGVufDB8fDB8fHww');">
+                </div>
+                {{-- <div class="absolute inset-0  bg-no-repeat bg-fit bg-center opacity-25" style="background-image: url('{{ asset('images/login-image.png') }}');">
+                </div> --}}
+                <!-- Content Layer -->
+                <div class="relative h-full overflow-auto z-10">
+                    <x-session-msg />
+                    {{ $slot }}
+                </div>
+            </div>
         </div>
     </div>
 

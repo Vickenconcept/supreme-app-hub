@@ -2,7 +2,7 @@
 
     <section class="min-h-screen overflow-y-hidden">
         <img src="https://plus.unsplash.com/premium_photo-1680985551058-2759df426d0d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YXBwfGVufDB8fDB8fHww"
-            alt="" class="w-full h-full object-fit object-center">
+            alt="" class="w-full h-screen lg:h-full object-fit object-center">
         <div
             class="h-full w-full fixed top-0 right-0 flex flex-col md:flex-row items-center justify-center bg-[#0a0f2c]/80 text-white">
 
@@ -32,7 +32,7 @@
             </div>
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-20 pb-16 text-center lg:pt-32">
                 <p class="mx-auto -mt-4 max-w-2xl text-lg tracking-tight text-slate-50 sm:mt-6">Welcome to
-                    <span class="border-b border-dotted border-slate-50">XYZ</span>
+                    <span class="border-b border-dotted border-slate-50">AppHub</span>
                 </p>
             
                 <h1 class="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-gray-50 sm:text-7xl">
@@ -45,8 +45,8 @@
                 </h1>
             
                 <p class="mx-auto mt-9 max-w-2xl text-lg tracking-tight text-slate-50 sm:mt-6">
-                    <span class="inline-block">Bring functionalities of other apps</span>
-                    <span class="inline-block">into your Notion workspaces.</span>
+                    {{-- <span class="inline-block">Bring functionalities of other apps</span> --}}
+                    <span class="inline-block">One Account, Many Experiences</span>
                 </p>
             
                 <div class="mt-12 flex flex-col justify-center gap-y-5 sm:mt-10 sm:flex-row sm:gap-y-0 sm:gap-x-6">

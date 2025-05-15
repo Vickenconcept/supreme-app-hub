@@ -8,14 +8,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     @seo([
-        'title' => 'FluenceGrid',
-        'description' => 'Influencers Management Hub',
+        'title' => 'My Automation Toolkit',
+        'description' => 'My Automation Toolkit',
         'image' => asset('images/login-image.png'),
         'site_name' => config('app.name'),
         'favicon' => asset('images/fav-image.png'),
     ])
 
-    <title>Influence</title>
+    <title>My Automation Toolkit</title>
 
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

@@ -1,4 +1,4 @@
-<nav class="fixed top-0 z-40 w-full bg-white border-b border-slate-300 ">
+<nav class="fixed top-0 z-40 w-full bg-white border-b border-gray-300">
     <div class="px-3 py-3 lg:px-5 lg:pl-3">
         <div class="flex items-center justify-between">
             <div class="flex items-center justify-start rtl:justify-end">
@@ -27,7 +27,7 @@
                     $notifications = auth()->user()->notifications;
                 @endphp
 
-                <button id="notification_bell" data-dropdown-toggle="dropdownNotification" 
+                {{-- <button id="notification_bell" data-dropdown-toggle="dropdownNotification" 
                     class="relative inline-flex items-center text-sm font-medium text-center text-transparent hover:text-gray-300 focus:outline-none bg-white p-2 rounded-md"
                     type="button">
                     <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="gray"
@@ -104,18 +104,19 @@
                             </form>
                         </div>
                     </a>
-                </div>
+                </div> --}}
 
                 <div class="flex items-center ms-3">
-                    <div class="flex items-center space-x-2"  aria-expanded="false" data-dropdown-toggle="dropdown-user" id="profile_avatar">
+                    <div class="flex items-center "  aria-expanded="false" data-dropdown-toggle="dropdown-user" id="profile_avatar">
                         <button type="button" id="profile_avatar"
-                            class="flex text-sm bg-gray-800 rounded-md focus:ring-4 focus:ring-gray-300 ">
+                            class="flex text-sm  rounded-md focus:ring-4 focus:ring-gray-300 ">
                             <span class="sr-only">Open user menu</span>
-                            <img class="w-10 h-10 rounded-md"
-                                src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="user photo">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                  </svg>
                         </button>
                         <div class="bg-white rounded-md px-3 py-1 w-48 truncate cursor-pointer hidden md:block" >
-                            <p class="text-sm font-semibold capitalize"> {{ auth()->user()->name }}</p>
+                            <p class="text-sm font-semibold capitalize text-orange-600"> {{ auth()->user()->name }}</p>
                             <p class="text-xs">{{ auth()->user()->email }}</p>
                         </div>
                     </div>
@@ -130,11 +131,11 @@
                             </p>
                         </div>
                         <ul class="py-1" role="none">
-                            <li>
+                            {{-- <li>
                                 <a href="{{ route('home') }}"
                                     class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100  "
                                     role="menuitem">Dashboard</a>
-                            </li>
+                            </li> --}}
                             <li>
                                 <a href="{{ route('profile') }}"
                                     class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 ">

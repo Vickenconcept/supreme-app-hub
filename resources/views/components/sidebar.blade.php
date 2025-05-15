@@ -1,37 +1,50 @@
 <aside id="logo-sidebar"
-    class="fixed top-0 left-0 z-40 w-64 h-screen  transition-transform -translate-x-full bg-white  sm:translate-x-0  py-3 "
+    class="fixed top-0 left-0 z-40 w-64 h-screen  transition-transform -translate-x-full bg-[#0a0f2c]  sm:translate-x-0  py-3 pl-3 border-r border-gray-300 overflow-y-scroll"
     aria-label="Sidebar">
-    <div class="bg-white h-full rounded-xl px-3 pb-4 ">
+    <div class="bg-[#0a0f2c] h-full rounded-xl px-3 pb-4 ">
         <div class="py-5 mb-2 border-b-2 border-slate-300">
             <a href="/home" class="">
-                <img src="{{ asset('images/logo.svg') }}" class="h-10 me-3" alt="FluenceGrid Logo" />
+                {{-- <img src="{{ asset('images/logo.svg') }}" class="h-10 me-3" alt="FluenceGrid Logo" /> --}}
+                <div class=" font-medium text-orange-500  flex items-center space-x-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-8">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
+                    </svg>
+                    <span class="text-white">My Automation Toolkit</span>
+                </div>
             </a>
         </div>
-        <div class="h-[85%] pb-4 overflow-y-auto ">
-            <ul class="space-y-1 font-medium">
-                <li>
-                    <a href="{{ route('home') }}"
-                        class="flex items-center p-2 text-gray-900 rounded-3xl  hover:bg-gray-100 group transition duration-500 ease-in-out {{ request()->routeIs('home') ? 'bg-orange-500/20' : '' }}">
-                        <i class='bx bx-home-smile text-xl mr-2 text-orange-500 bg-slate-50 px-1.5 py-0.5 rounded-full'></i>
-                        <span class="">Dashboard</span>
-                    </a>
-                </li>
+        <div class="h-[85%] py-4 overflow-y-auto ">
+            <ul class="space-y-1 font-medium h-full flex flex-col justify-between">
+                <div class="space-y-1 ">
+                    <li>
+                        <a href="{{ route('home') }}"
+                            class="flex items-center p-2 group  rounded-3xl  hover:bg-gray-100 group hover:text-orange-500 transition duration-500 ease-in-out {{ request()->routeIs('home') ? 'bg-orange-500 text-gray-50 ' : 'text-gray-50' }}">
+                            <i
+                                class='bx bx-home-smile text-xl mr-2 text-orange-500 group-hover:bg-orange-500 group-hover:text-white transition duration-500 ease-in-out bg-slate-50 px-1.5 py-0.5 rounded-full shadow-md'></i>
+                            <span class="">My Apps</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('reseller.index') }}"
+                            class="flex items-center p-2 group  rounded-3xl  hover:bg-gray-100 group hover:text-orange-500 transition duration-500 ease-in-out {{ request()->routeIs('reseller.index') ? 'bg-orange-500 text-gray-50' : 'text-gray-50' }}">
+                            <i
+                                class='bx bx-refresh text-xl mr-2 text-orange-500 group-hover:bg-orange-500 group-hover:text-white transition duration-500 ease-in-out bg-slate-50 px-1.5 py-0.5 rounded-full shadow-md'></i>
+                            <span class="text-sm">Reseller</span>
+                        </a>
+                    </li>
+                </div>
 
-               
 
-                
+
+
                 {{-- <hr class="border border-slate-300"> --}}
-                <li>
-                    <a href="{{ route('reseller.index') }}"
-                        class="flex items-center p-2 text-gray-900 rounded-3xl  hover:bg-gray-100 group transition duration-500 ease-in-out {{ request()->routeIs('reseller.index') ? 'bg-orange-500/20' : '' }}">
-                        <i class='bx bx-refresh text-xl mr-2 text-orange-500 bg-slate-50 px-1.5 py-0.5 rounded-full'></i>
-                        <span class="text-sm">Reseller</span>
-                    </a>
-                </li>
                 <li class="">
                     <a href="{{ route('auth.logout') }}"
-                        class="flex items-center p-2 text-gray-900 rounded-3xl  hover:bg-gray-100 group transition duration-500 ease-in-out">
-                        <i class='bx bx-exit text-xl mr-2 text-orange-500 bg-slate-50 px-1.5 py-0.5 rounded-full'></i>
+                        class="flex items-center text-white p-2 group  rounded-3xl border border-white  hover:bg-gray-100 group hover:text-orange-500 transition duration-500 ease-in-out">
+                        <i
+                            class='bx bx-exit text-xl mr-2 text-orange-500 group-hover:bg-orange-500 group-hover:text-white transition duration-500 ease-in-out bg-slate-50 px-1.5 py-0.5 rounded-full shadow-md'></i>
                         <span class="text-sm capitalize">Log out</span>
                     </a>
                 </li>

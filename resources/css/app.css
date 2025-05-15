@@ -4,7 +4,7 @@
 
 
 .form-control {
-    @apply bg-gray-50 border border-gray-300   rounded-lg focus:ring-slate-900 focus:border-slate-900  block w-full p-2.5 
+    @apply appearance-none block w-full px-3 py-3 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm
 }
 .btn {
     @apply block w-full rounded-lg bg-[#0F1523] px-6 py-3 text-xs font-medium capitalize leading-normal text-white shadow transition duration-150 ease-in-out
@@ -15,8 +15,8 @@
 
 
 ::-webkit-scrollbar {
-    width: 3px;
-    height: 3px;
+    width: 10px;
+    height: 10px;
   }
   
   /* Track */
