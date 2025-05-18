@@ -1,6 +1,6 @@
 import './bootstrap';
 import 'flowbite'
-// import './drivers'
+import '../css/app.css'
 
 import notification from './notification';
 

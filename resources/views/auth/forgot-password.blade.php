@@ -48,6 +48,11 @@
                     <div class="bg-slate-400/25 backdrop-blur-lg p-8 md:p-12 rounded-3xl shadow-xl">
                         <h2 class="text-2xl md:text-3xl font-medium text-center mb-6">Create</h2>
                         <x-session-msg />
+                        @if (session('status'))
+                            <div class="bg-green-200 text-green-500 p-4">
+                                {{ session('status') }}
+                            </div>
+                        @endif
                         <form method="POST" action="{{ route('password.email') }}" class="space-y-4">
                             @csrf
                             {{-- Email --}}

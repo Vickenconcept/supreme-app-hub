@@ -23,7 +23,9 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
+    @vite(['resources/js/app.js'])
+
 
 
     @yield('styles')
@@ -49,14 +51,14 @@
     });
 
     document.addEventListener("DOMContentLoaded", function() {
-            var hiddenLinearPreloader = document.getElementById("hiddenLinearPreloader");
+        var hiddenLinearPreloader = document.getElementById("hiddenLinearPreloader");
 
-            hiddenLinearPreloader.classList.remove("hidden");
+        hiddenLinearPreloader.classList.remove("hidden");
 
-            setTimeout(function() {
-                hiddenLinearPreloader.classList.add("hidden");
-            }, 2000);
-        });
+        setTimeout(function() {
+            hiddenLinearPreloader.classList.add("hidden");
+        }, 2000);
+    });
 </script>
 
 
