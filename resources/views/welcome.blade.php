@@ -1,5 +1,11 @@
 <x-guest-layout>
-
+    @seo([
+        'title' => 'My Automation Toolkit',
+        'description' => 'My Automation Toolkit',
+        'image' => asset('images/login-image.png'),
+        'site_name' => config('app.name'),
+        'favicon' => asset('images/fav-image.png'),
+    ])
     <section  class="min-h-screen overflow-y-hidden">
         <img id="scrollBox" src="https://plus.unsplash.com/premium_photo-1680985551058-2759df426d0d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YXBwfGVufDB8fDB8fHww"
             alt="" class="w-full h-screen lg:h-full object-fit object-center">
