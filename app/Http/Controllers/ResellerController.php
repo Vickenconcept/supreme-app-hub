@@ -100,11 +100,12 @@ class ResellerController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy($id)
+   
+
+    public function destroy(User $user)
     {
-        $user = User::find($id);
         $user->delete();
 
-        return back()->with('success', 'User Deleted Successfully');
+        return redirect()->back()->with('success', 'User deleted successfully.');
     }
 }

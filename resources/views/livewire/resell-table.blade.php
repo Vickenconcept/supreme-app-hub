@@ -41,11 +41,19 @@
                                 class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
                                 <ul class="py-2 text-sm text-gray-700 "
                                     aria-labelledby="dropdownDefaultButton">
-                                    <li class="hover:bg-red-200 text-red-500 hover:text-red-700 cursor-pointer"
+                                    {{-- <li class="hover:bg-red-200 text-red-500 hover:text-red-700 cursor-pointer"
                                         wire:click="deletUser({{ $user->id }})">
                                         Are you sure ?<i class='bx bxs-trash text-md ml-2 '></i>
 
-                                    </li>
+                                    </li> --}}
+                                    <form action="{{ route('users.destroy', $user->id) }}" method="POST" onsubmit="return confirm('Are you sure you want to delete this user?');">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="text-red-500 hover:text-red-700 hover:bg-red-200 px-2 py-1 rounded cursor-pointer flex items-center">
+                                            Are you sure? <i class='bx bxs-trash text-md ml-2'></i>
+                                        </button>
+                                    </form>
+                                    
 
                                 </ul>
                             </div>

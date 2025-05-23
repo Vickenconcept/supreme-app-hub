@@ -14,9 +14,6 @@
                     @click="openModal = true"><i class="bx bx-plus mr-2"></i> Register user</button>
             </div>
         </div>
-        <div class=" ">
-            <x-session-msg />
-        </div>
 
         {{-- modal --}}
         <div class="fixed items-center justify-center   flex top-0 left-0 mx-auto w-full h-full bg-gray-600 bg-opacity-20 z-50 transition duration-1000 ease-in-out"

@@ -12,6 +12,7 @@ class ResellTable extends Component
 
 
     public function deletUser($id){
+        dd('hello');
        $user = User::find($id);
 
        $user->delete();

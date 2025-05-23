@@ -54,10 +54,17 @@ Route::middleware(['auth'])->group(function () {
     Route::post('profile/password', [ProfileController::class, 'changePassword'])->name('changePassword');
 
     Route::resource('reseller', ResellerController::class);
+    Route::delete('/users/{user}', [ResellerController::class, 'destroy'])->name('users.destroy');
 
 
-    // Route::post('inquiries/{campaignId}/{influencerId}', [CampaignInquiryController::class, 'sendInquiry']);
+    Route::view('/dfy-sales-pages', 'dfy_sales_pages')->name('dfy_sales_pages.index');
+    Route::view('/traffic-training', 'traffic_training')->name('traffic_training.index');
+    Route::view('/dfy-convert-swipes', 'dfy_convert_swipes')->name('dfy_convert_swipes.index');
+    Route::view('/solo-ads-vendors', 'solo_ads_vendors')->name('solo_ads_vendors.index');
+    Route::view('/affiliate-training', 'affiliate_training')->name('affiliate_training.index');
+    Route::view('/dfy-sales-setup', 'dfy_sales_setup')->name('dfy_sales_setup.index');
+    Route::view('/dfy-agency-setup', 'dfy_agency_setup')->name('dfy_agency_setup.index');
+    Route::view('/8-week-coaching-program', '8_week_coaching_program')->name('8_week_coaching_program.index');
+    Route::view('/unlimited-traffic', 'unlimited_traffic')->name('unlimited_traffic.index');
+    Route::view('/support', 'support')->name('support.index');
 });
-
-
-

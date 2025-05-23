@@ -57,7 +57,7 @@
     <link rel="stylesheet" href="{{ asset('build/assets/app-CE5Kpj__.css') }}"> --}}
     
 
-    {{-- @livewireStyles --}}
+    @livewireStyles
     @yield('styles')
 
 
@@ -99,7 +99,7 @@
 
 
 
-    {{-- @livewireScripts --}}
+    @livewireScripts
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -126,10 +126,6 @@
         });
     </script>
 
-{{-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script> --}}
-    {{-- <script src="{{ asset('build/assets/app-CB21gC7Z.js') }}"></script> --}}
 
 </body>
 
