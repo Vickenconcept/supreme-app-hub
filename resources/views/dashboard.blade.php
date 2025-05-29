@@ -87,31 +87,31 @@
                             login: 'https://socilinks.com/login',
                             register: 'https://socilinks.com/reseller/signup'
                         },
-
                         {
                             id: 7,
+                            title: 'AI Tubemonetizer',
+                            description: 'AI Tubemonetizer is more than just an agency. We empower brands with easy-to-use software tools, actionable insights, and expert agency services to grow their YouTube channel.',
+                            image: '{{ asset('images/aitubemonetizer.png') }}',
+                            login: 'https://aitubemonetizer.com/',
+                            register: 'https://aitubemonetizer.com/reseller-account-create'
+                        },
+                        {
+                            id: 8,
+                            title: 'Tubecentric',
+                            description: 'tubecentric',
+                            image: '{{ asset('images/tubecentric.png') }}',
+                            login: 'http://tubecentric.com/',
+                            register: 'http://tubecentric.com/register-reseller'
+                        },
+                        {
+                            id: 9,
                             title: 'Xteract',
                             description: 'xteract',
                             image: '{{ asset('images/xteract.png') }}',
                             login: 'https://xteract.com/login',
                             register: 'https://xteract.com/login'
                         },
-                        {
-                            id: 8,
-                            title: 'AI Tubemonetizer',
-                            description: 'AI Tubemonetizer is more than just an agency. We empower brands with easy-to-use software tools, actionable insights, and expert agency services to grow their YouTube channel.',
-                            image: '{{ asset('images/aitubemonetizer.png') }}',
-                            login: 'https://aitubemonetizer.com/',
-                            register: 'https://aitubemonetizer.com/'
-                        },
-                        {
-                            id: 9,
-                            title: 'Tubecentric',
-                            description: 'tubecentric',
-                            image: '{{ asset('images/tubecentric.png') }}',
-                            login: 'http://tubecentric.com/',
-                            register: 'http://tubecentric.com/'
-                        },
+                       
                         {
                             id: 10,
                             title: 'Tvengager',
