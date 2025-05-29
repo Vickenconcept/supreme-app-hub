@@ -26,41 +26,50 @@
                             <span class="">My Apps</span>
                         </a>
                     </li>
-                  
+
+
+                    @can('access-sales-pages-setup')
+                        <li>
+                            <a href="{{ route('dfy_sales_pages.index') }}"
+                                class="flex items-center p-2 group rounded-3xl hover:bg-gray-100 group hover:text-orange-500 transition duration-500 ease-in-out {{ request()->routeIs('dfy_sales_pages.index') ? 'bg-orange-500 text-gray-50' : 'text-gray-50' }}">
+                                <i
+                                    class='bx bx-refresh text-xl mr-2 text-orange-500 group-hover:bg-orange-500 group-hover:text-white transition duration-500 ease-in-out bg-slate-50 px-1.5 py-0.5 rounded-full shadow-md'></i>
+                                <span class="text-sm">DFY Sales Pages</span>
+                            </a>
+                        </li>
+                    @endcan
+                    @can('access-dfy-marketing')
 
                     <li>
-                        <a href="{{ route('dfy_sales_pages.index') }}"
-                           class="flex items-center p-2 group rounded-3xl hover:bg-gray-100 group hover:text-orange-500 transition duration-500 ease-in-out {{ request()->routeIs('dfy_sales_pages.index') ? 'bg-orange-500 text-gray-50' : 'text-gray-50' }}">
-                          <i class='bx bx-refresh text-xl mr-2 text-orange-500 group-hover:bg-orange-500 group-hover:text-white transition duration-500 ease-in-out bg-slate-50 px-1.5 py-0.5 rounded-full shadow-md'></i>
-                          <span class="text-sm">DFY Sales Pages</span>
-                        </a>
-                      </li>
-                      
-                      <li>
                         <a href="{{ route('traffic_training.index') }}"
-                           class="flex items-center p-2 group rounded-3xl hover:bg-gray-100 group hover:text-orange-500 transition duration-500 ease-in-out {{ request()->routeIs('traffic_training.index') ? 'bg-orange-500 text-gray-50' : 'text-gray-50' }}">
-                          <i class='bx bx-refresh text-xl mr-2 text-orange-500 group-hover:bg-orange-500 group-hover:text-white transition duration-500 ease-in-out bg-slate-50 px-1.5 py-0.5 rounded-full shadow-md'></i>
-                          <span class="text-sm">Traffic Training</span>
+                            class="flex items-center p-2 group rounded-3xl hover:bg-gray-100 group hover:text-orange-500 transition duration-500 ease-in-out {{ request()->routeIs('traffic_training.index') ? 'bg-orange-500 text-gray-50' : 'text-gray-50' }}">
+                            <i
+                                class='bx bx-refresh text-xl mr-2 text-orange-500 group-hover:bg-orange-500 group-hover:text-white transition duration-500 ease-in-out bg-slate-50 px-1.5 py-0.5 rounded-full shadow-md'></i>
+                            <span class="text-sm">Traffic Training</span>
                         </a>
-                      </li>
-                      
-                      <li>
+                    </li>
+                    @endcan
+
+                    <li>
                         <a href="{{ route('dfy_convert_swipes.index') }}"
-                           class="flex items-center p-2 group rounded-3xl hover:bg-gray-100 group hover:text-orange-500 transition duration-500 ease-in-out {{ request()->routeIs('dfy_convert_swipes.index') ? 'bg-orange-500 text-gray-50' : 'text-gray-50' }}">
-                          <i class='bx bx-refresh text-xl mr-2 text-orange-500 group-hover:bg-orange-500 group-hover:text-white transition duration-500 ease-in-out bg-slate-50 px-1.5 py-0.5 rounded-full shadow-md'></i>
-                          <span class="text-sm">DFY Convert Swipes</span>
+                            class="flex items-center p-2 group rounded-3xl hover:bg-gray-100 group hover:text-orange-500 transition duration-500 ease-in-out {{ request()->routeIs('dfy_convert_swipes.index') ? 'bg-orange-500 text-gray-50' : 'text-gray-50' }}">
+                            <i
+                                class='bx bx-refresh text-xl mr-2 text-orange-500 group-hover:bg-orange-500 group-hover:text-white transition duration-500 ease-in-out bg-slate-50 px-1.5 py-0.5 rounded-full shadow-md'></i>
+                            <span class="text-sm">DFY Convert Swipes</span>
                         </a>
-                      </li>
-                      
-                      <li>
+                    </li>
+
+                    <li>
                         <a href="{{ route('solo_ads_vendors.index') }}"
-                           class="flex items-center p-2 group rounded-3xl hover:bg-gray-100 group hover:text-orange-500 transition duration-500 ease-in-out {{ request()->routeIs('solo_ads_vendors.index') ? 'bg-orange-500 text-gray-50' : 'text-gray-50' }}">
-                          <i class='bx bx-refresh text-xl mr-2 text-orange-500 group-hover:bg-orange-500 group-hover:text-white transition duration-500 ease-in-out bg-slate-50 px-1.5 py-0.5 rounded-full shadow-md'></i>
-                          <span class="text-sm">Solo Ads Vendors</span>
+                            class="flex items-center p-2 group rounded-3xl hover:bg-gray-100 group hover:text-orange-500 transition duration-500 ease-in-out {{ request()->routeIs('solo_ads_vendors.index') ? 'bg-orange-500 text-gray-50' : 'text-gray-50' }}">
+                            <i
+                                class='bx bx-refresh text-xl mr-2 text-orange-500 group-hover:bg-orange-500 group-hover:text-white transition duration-500 ease-in-out bg-slate-50 px-1.5 py-0.5 rounded-full shadow-md'></i>
+                            <span class="text-sm">Solo Ads Vendors</span>
                         </a>
-                      </li>
-                      
-                      <li>
+                    </li>
+
+                    @can('manage-reseller')
+                    <li>
                         <a href="{{ route('reseller.index') }}"
                             class="flex items-center p-2 group  rounded-3xl  hover:bg-gray-100 group hover:text-orange-500 transition duration-500 ease-in-out {{ request()->routeIs('reseller.index') ? 'bg-orange-500 text-gray-50' : 'text-gray-50' }}">
                             <i
@@ -68,71 +77,88 @@
                             <span class="text-sm">Reseller</span>
                         </a>
                     </li>
-                      
-                      <li>
+                    @endcan
+                    @can('access-affiliate-training')
+
+                    <li>
                         <a href="{{ route('affiliate_training.index') }}"
-                           class="flex items-center p-2 group rounded-3xl hover:bg-gray-100 group hover:text-orange-500 transition duration-500 ease-in-out {{ request()->routeIs('affiliate_training.index') ? 'bg-orange-500 text-gray-50' : 'text-gray-50' }}">
-                          <i class='bx bx-refresh text-xl mr-2 text-orange-500 group-hover:bg-orange-500 group-hover:text-white transition duration-500 ease-in-out bg-slate-50 px-1.5 py-0.5 rounded-full shadow-md'></i>
-                          <span class="text-sm">Affiliate Training</span>
+                            class="flex items-center p-2 group rounded-3xl hover:bg-gray-100 group hover:text-orange-500 transition duration-500 ease-in-out {{ request()->routeIs('affiliate_training.index') ? 'bg-orange-500 text-gray-50' : 'text-gray-50' }}">
+                            <i
+                                class='bx bx-refresh text-xl mr-2 text-orange-500 group-hover:bg-orange-500 group-hover:text-white transition duration-500 ease-in-out bg-slate-50 px-1.5 py-0.5 rounded-full shadow-md'></i>
+                            <span class="text-sm">Affiliate Training</span>
                         </a>
-                      </li>
-                      
-                      <li>
+                    </li>
+                    @endcan
+
+                    @can('access-sales-pages-setup')
+                    <li>
                         <a href="{{ route('dfy_sales_setup.index') }}"
-                           class="flex items-center p-2 group rounded-3xl hover:bg-gray-100 group hover:text-orange-500 transition duration-500 ease-in-out {{ request()->routeIs('dfy_sales_setup.index') ? 'bg-orange-500 text-gray-50' : 'text-gray-50' }}">
-                          <i class='bx bx-refresh text-xl mr-2 text-orange-500 group-hover:bg-orange-500 group-hover:text-white transition duration-500 ease-in-out bg-slate-50 px-1.5 py-0.5 rounded-full shadow-md'></i>
-                          <span class="text-sm">DFY Sales Setup</span>
+                            class="flex items-center p-2 group rounded-3xl hover:bg-gray-100 group hover:text-orange-500 transition duration-500 ease-in-out {{ request()->routeIs('dfy_sales_setup.index') ? 'bg-orange-500 text-gray-50' : 'text-gray-50' }}">
+                            <i
+                                class='bx bx-refresh text-xl mr-2 text-orange-500 group-hover:bg-orange-500 group-hover:text-white transition duration-500 ease-in-out bg-slate-50 px-1.5 py-0.5 rounded-full shadow-md'></i>
+                            <span class="text-sm">DFY Sales Setup</span>
                         </a>
-                      </li>
-                      
-                      <li>
+                    </li>
+                    @endcan
+
+                    @can('access-agency-website-setup')
+                    <li>
                         <a href="{{ route('dfy_agency_setup.index') }}"
-                           class="flex items-center p-2 group rounded-3xl hover:bg-gray-100 group hover:text-orange-500 transition duration-500 ease-in-out {{ request()->routeIs('dfy_agency_setup.index') ? 'bg-orange-500 text-gray-50' : 'text-gray-50' }}">
-                          <i class='bx bx-refresh text-xl mr-2 text-orange-500 group-hover:bg-orange-500 group-hover:text-white transition duration-500 ease-in-out bg-slate-50 px-1.5 py-0.5 rounded-full shadow-md'></i>
-                          <span class="text-sm">DFY Agency Setup</span>
+                            class="flex items-center p-2 group rounded-3xl hover:bg-gray-100 group hover:text-orange-500 transition duration-500 ease-in-out {{ request()->routeIs('dfy_agency_setup.index') ? 'bg-orange-500 text-gray-50' : 'text-gray-50' }}">
+                            <i
+                                class='bx bx-refresh text-xl mr-2 text-orange-500 group-hover:bg-orange-500 group-hover:text-white transition duration-500 ease-in-out bg-slate-50 px-1.5 py-0.5 rounded-full shadow-md'></i>
+                            <span class="text-sm">DFY Agency Setup</span>
                         </a>
-                      </li>
-                      
-                      <li>
+                    </li>
+                    @endcan
+
+                    @can('access-coaching-program')
+                    <li>
                         <a href="{{ route('8_week_coaching_program.index') }}"
-                           class="flex items-center p-2 group rounded-3xl hover:bg-gray-100 group hover:text-orange-500 transition duration-500 ease-in-out {{ request()->routeIs('8_week_coaching_program.index') ? 'bg-orange-500 text-gray-50' : 'text-gray-50' }}">
-                          <i class='bx bx-refresh text-xl mr-2 text-orange-500 group-hover:bg-orange-500 group-hover:text-white transition duration-500 ease-in-out bg-slate-50 px-1.5 py-0.5 rounded-full shadow-md'></i>
-                          <span class="text-sm">8 Week Coaching Program</span>
+                            class="flex items-center p-2 group rounded-3xl hover:bg-gray-100 group hover:text-orange-500 transition duration-500 ease-in-out {{ request()->routeIs('8_week_coaching_program.index') ? 'bg-orange-500 text-gray-50' : 'text-gray-50' }}">
+                            <i
+                                class='bx bx-refresh text-xl mr-2 text-orange-500 group-hover:bg-orange-500 group-hover:text-white transition duration-500 ease-in-out bg-slate-50 px-1.5 py-0.5 rounded-full shadow-md'></i>
+                            <span class="text-sm">8 Week Coaching Program</span>
                         </a>
-                      </li>
-                      
-                      <li>
+                    </li>
+                    @endcan
+
+                    @can('access-unlimited-traffic')
+                    <li>
                         <a href="{{ route('unlimited_traffic.index') }}"
-                           class="flex items-center p-2 group rounded-3xl hover:bg-gray-100 group hover:text-orange-500 transition duration-500 ease-in-out {{ request()->routeIs('unlimited_traffic.index') ? 'bg-orange-500 text-gray-50' : 'text-gray-50' }}">
-                          <i class='bx bx-refresh text-xl mr-2 text-orange-500 group-hover:bg-orange-500 group-hover:text-white transition duration-500 ease-in-out bg-slate-50 px-1.5 py-0.5 rounded-full shadow-md'></i>
-                          <span class="text-sm">Unlimited Traffic</span>
+                            class="flex items-center p-2 group rounded-3xl hover:bg-gray-100 group hover:text-orange-500 transition duration-500 ease-in-out {{ request()->routeIs('unlimited_traffic.index') ? 'bg-orange-500 text-gray-50' : 'text-gray-50' }}">
+                            <i
+                                class='bx bx-refresh text-xl mr-2 text-orange-500 group-hover:bg-orange-500 group-hover:text-white transition duration-500 ease-in-out bg-slate-50 px-1.5 py-0.5 rounded-full shadow-md'></i>
+                            <span class="text-sm">Unlimited Traffic</span>
                         </a>
-                      </li>
-                      
-                      <li>
+                    </li>
+                    @endcan
+
+                    <li>
                         <a href="{{ route('support.index') }}"
-                           class="flex items-center p-2 group rounded-3xl hover:bg-gray-100 group hover:text-orange-500 transition duration-500 ease-in-out {{ request()->routeIs('support.index') ? 'bg-orange-500 text-gray-50' : 'text-gray-50' }}">
-                          <i class='bx bx-refresh text-xl mr-2 text-orange-500 group-hover:bg-orange-500 group-hover:text-white transition duration-500 ease-in-out bg-slate-50 px-1.5 py-0.5 rounded-full shadow-md'></i>
-                          <span class="text-sm">Support</span>
+                            class="flex items-center p-2 group rounded-3xl hover:bg-gray-100 group hover:text-orange-500 transition duration-500 ease-in-out {{ request()->routeIs('support.index') ? 'bg-orange-500 text-gray-50' : 'text-gray-50' }}">
+                            <i
+                                class='bx bx-refresh text-xl mr-2 text-orange-500 group-hover:bg-orange-500 group-hover:text-white transition duration-500 ease-in-out bg-slate-50 px-1.5 py-0.5 rounded-full shadow-md'></i>
+                            <span class="text-sm">Support</span>
                         </a>
-                      </li>
-                      
+                    </li>
+
                 </div>
 
 
 
 
-              <div class=" space-y-2 flex flex-col justify-between">
-                <hr class="border border-slate-300">
-                <li class="">
-                    <a href="{{ route('auth.logout') }}"
-                        class="flex items-center text-white p-2 group  rounded-3xl border border-white  hover:bg-gray-100 group hover:text-orange-500 transition duration-500 ease-in-out">
-                        <i
-                            class='bx bx-exit text-xl mr-2 text-orange-500 group-hover:bg-orange-500 group-hover:text-white transition duration-500 ease-in-out bg-slate-50 px-1.5 py-0.5 rounded-full shadow-md'></i>
-                        <span class="text-sm capitalize">Log out</span>
-                    </a>
-                </li>
-              </div>
+                <div class=" space-y-2 flex flex-col justify-between">
+                    <hr class="border border-slate-300">
+                    <li class="">
+                        <a href="{{ route('auth.logout') }}"
+                            class="flex items-center text-white p-2 group  rounded-3xl border border-white  hover:bg-gray-100 group hover:text-orange-500 transition duration-500 ease-in-out">
+                            <i
+                                class='bx bx-exit text-xl mr-2 text-orange-500 group-hover:bg-orange-500 group-hover:text-white transition duration-500 ease-in-out bg-slate-50 px-1.5 py-0.5 rounded-full shadow-md'></i>
+                            <span class="text-sm capitalize">Log out</span>
+                        </a>
+                    </li>
+                </div>
             </ul>
         </div>
     </div>

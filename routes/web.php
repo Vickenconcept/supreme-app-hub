@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\JVZooWebhookController;
 use App\Http\Controllers\NotificationController;
 use App\Http\Controllers\PasswordResetController;
 use App\Http\Controllers\ProfileController;
@@ -68,3 +69,6 @@ Route::middleware(['auth'])->group(function () {
     Route::view('/unlimited-traffic', 'unlimited_traffic')->name('unlimited_traffic.index');
     Route::view('/support', 'support')->name('support.index');
 });
+
+
+Route::post('/ipn/jvzoo', [JVZooWebhookController::class, 'JVZoo']);
