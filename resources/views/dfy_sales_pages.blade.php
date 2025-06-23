@@ -16,57 +16,71 @@
             <ul class="space-y-4">
                 <li class="flex justify-between items-center border-b pb-2">
                     <span class="font-medium">Avatarcrew</span>
-                    <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold">CLICK HERE TO DOWNLOAD THE
+                    <a href="https://mega.nz/file/mp0wXLwJ#dVxXZnE8HEAqEG0hX0UGh8F9wOQ9cpXKNq55DPgj3IM" target="_blank"
+                        rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 font-semibold">CLICK HERE TO
+                        DOWNLOAD THE
                         SALES PAGE</a>
                 </li>
                 <li class="flex justify-between items-center border-b pb-2">
                     <span class="font-medium">Trustcomplify</span>
-                    <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold">CLICK HERE TO DOWNLOAD THE
+                    <a href="#" target="_blank" rel="noopener noreferrer"
+                        class="text-blue-600 hover:text-blue-800 font-semibold">CLICK HERE TO DOWNLOAD THE
                         SALES PAGE</a>
                 </li>
                 <li class="flex justify-between items-center border-b pb-2">
                     <span class="font-medium">XTeract</span>
-                    <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold">CLICK HERE TO DOWNLOAD THE
+                    <a href="https://mega.nz/file/T98FFByK#rb-YrRtS4amPJGOcjKCqNyDa0KFaMeFnsWRW3kRMIqI" target="_blank" rel="noopener noreferrer"
+                        class="text-blue-600 hover:text-blue-800 font-semibold">CLICK HERE TO DOWNLOAD THE
                         SALES PAGE</a>
                 </li>
                 <li class="flex justify-between items-center border-b pb-2">
                     <span class="font-medium">Ai TubeMonetizer</span>
-                    <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold">CLICK HERE TO DOWNLOAD THE
+                    <a href="https://mega.nz/file/bwt2zAzB#N6MR1o7L92Q6hn2hxMZurPkpL-hj9SUw78xxUWsnPmI" target="_blank"
+                        rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 font-semibold">CLICK HERE TO
+                        DOWNLOAD THE
                         SALES PAGE</a>
                 </li>
                 <li class="flex justify-between items-center border-b pb-2">
                     <span class="font-medium">TubeCentric</span>
-                    <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold">CLICK HERE TO DOWNLOAD THE
+                    <a href="#" target="_blank" rel="noopener noreferrer"
+                        class="text-blue-600 hover:text-blue-800 font-semibold">CLICK HERE TO DOWNLOAD THE
                         SALES PAGE</a>
                 </li>
                 <li class="flex justify-between items-center border-b pb-2">
                     <span class="font-medium">FluenceGrid</span>
-                    <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold">CLICK HERE TO DOWNLOAD THE
+                    <a href="#" target="_blank" rel="noopener noreferrer"
+                        class="text-blue-600 hover:text-blue-800 font-semibold">CLICK HERE TO DOWNLOAD THE
                         SALES PAGE</a>
                 </li>
                 <li class="flex justify-between items-center border-b pb-2">
                     <span class="font-medium">TVEngagr</span>
-                    <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold">CLICK HERE TO DOWNLOAD THE
+                    <a href="#" target="_blank" rel="noopener noreferrer"
+                        class="text-blue-600 hover:text-blue-800 font-semibold">CLICK HERE TO DOWNLOAD THE
                         SALES PAGE</a>
                 </li>
                 <li class="flex justify-between items-center border-b pb-2">
                     <span class="font-medium">ConvergeAi</span>
-                    <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold">CLICK HERE TO DOWNLOAD THE
+                    <a href="#" target="_blank" rel="noopener noreferrer"
+                        class="text-blue-600 hover:text-blue-800 font-semibold">CLICK HERE TO DOWNLOAD THE
                         SALES PAGE</a>
                 </li>
                 <li class="flex justify-between items-center border-b pb-2">
                     <span class="font-medium">QRDominator</span>
-                    <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold">CLICK HERE TO DOWNLOAD THE
+                    <a href="#" target="_blank" rel="noopener noreferrer"
+                        class="text-blue-600 hover:text-blue-800 font-semibold">CLICK HERE TO DOWNLOAD THE
                         SALES PAGE</a>
                 </li>
                 <li class="flex justify-between items-center border-b pb-2">
                     <span class="font-medium">TubeTargeter</span>
-                    <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold">CLICK HERE TO DOWNLOAD THE
+                    <a href="https://mega.nz/file/PhsX2CSS#GcwgKqEzFpD96tjYz0zXuoJ-KvyvfZKOCZnie9WWtAk" target="_blank"
+                        rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 font-semibold">CLICK HERE TO
+                        DOWNLOAD THE
                         SALES PAGE</a>
                 </li>
                 <li class="flex justify-between items-center">
                     <span class="font-medium">SociLinks</span>
-                    <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold">CLICK HERE TO DOWNLOAD THE
+                    <a href="#" target="_blank" rel="noopener noreferrer"
+                        class="text-blue-600 hover:text-blue-800 font-semibold">CLICK HERE TO DOWNLOAD THE
                         SALES PAGE</a>
                 </li>
             </ul>

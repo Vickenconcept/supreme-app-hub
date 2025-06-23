@@ -105,29 +105,30 @@
                         },
                         {
                             id: 9,
+                            title: 'Qrdominator',
+                            description: 'qrdominator',
+                            image: '{{ asset('images/qrdominator.png') }}',
+                            login: 'https://qrdominator.com/auth/login',
+                            register: 'https://qrdominator.com/auth/reseller/register'
+                        },
+                        {
+                            id: 10,
                             title: 'Xteract',
                             description: 'xteract',
                             image: '{{ asset('images/xteract.png') }}',
                             login: 'https://xteract.com/login',
-                            register: 'https://xteract.com/login'
+                            register: 'https://xteract.com/register-access'
                         },
                        
                         {
-                            id: 10,
+                            id: 11,
                             title: 'Tvengager',
                             description: 'tvengager',
                             image: '{{ asset('images/tvengager.png') }}',
                             login: 'https://app.tvengager.com/login',
                             register: 'https://app.tvengager.com/login'
                         },
-                        {
-                            id: 11,
-                            title: 'Qrdominator',
-                            description: 'qrdominator',
-                            image: '{{ asset('images/qrdominator.png') }}',
-                            login: 'https://qrdominator.com/auth/reseller/register',
-                            register: 'https://qrdominator.com/auth/reseller/register'
-                        },
+                        
 
                     ]
                 }))

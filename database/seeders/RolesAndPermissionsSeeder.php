@@ -34,7 +34,9 @@ class RolesAndPermissionsSeeder extends Seeder
         $Bundle->givePermissionTo($permissions);
 
         $OTO1 = Role::create(['name' => 'OTO1']);
-        $OTO1->givePermissionTo(['manage-reseller']);
+        // $OTO1->givePermissionTo(['manage-reseller']);
+        $permissions = Permission::where('name', '!=', 'access-coaching-program')->get();
+        $OTO1->syncPermissions($permissions);
 
 
         $OTO2 = Role::create(['name' => 'OTO2']); // Automation ToolKit Unlimited
